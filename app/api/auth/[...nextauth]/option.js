@@ -2,8 +2,8 @@ import GitHubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 
 export const options = {
-    provider: [
-        GithubProvider({
+    providers: [
+        GitHubProvider({
             profile(profile) {
                 console.log("Profile GitHub: ", profile);
 
